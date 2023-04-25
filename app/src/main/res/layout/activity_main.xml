@@ -1,18 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back3"
+    android:orientation="vertical"
+    android:gravity="center"
     tools:context=".MainActivity">
 
-    <TextView
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="370dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        tools:srcCompat="@tools:sample/backgrounds/scenic"/>
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_below="@id/image_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/btn_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Previous"
+            app:backgroundTint="@null"
+            android:background="@drawable/shape_button01"
+            android:onClick="previousImage"
+            android:layout_marginRight="80dp"/>
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            app:backgroundTint="@null"
+            android:background="@drawable/shape_button01"
+            android:onClick="nextImage"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
