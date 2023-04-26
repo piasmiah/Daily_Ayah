@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="images">
-        <item>https://i.ibb.co/c2tXtyr/d1.jpg</item>
+        <!--<item>https://i.ibb.co/c2tXtyr/d1.jpg</item>-->
+        <item>https://i.ibb.co/mDkDB8R/d2.jpg</item>
+        <item>https://i.ibb.co/w4m7FDk/d3.jpg</item>
+        <item>https://i.ibb.co/jgv8KHB/d4.jpg</item>
+        <item>https://i.ibb.co/SfNh6Yc/d5.jpg</item>
+        <item>https://i.ibb.co/dP5Dqhd/d6.jpg</item>
 
     </string-array>
 

@@ -4,15 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back3"
+    android:background="@drawable/back5"
     android:orientation="vertical"
     android:gravity="center"
     tools:context=".MainActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Read The Holy Ayah And Dowah"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:paddingTop="0px"
+        android:gravity="top"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        app:backgroundTint="@null"
+        android:background="@drawable/shape_button01"/>
+
     <ImageView
         android:id="@+id/image_view"
-        android:layout_width="370dp"
-        android:layout_height="400dp"
+        android:layout_width="359dp"
+        android:layout_height="370dp"
         android:layout_marginTop="40dp"
         android:layout_centerHorizontal="true"
         tools:srcCompat="@tools:sample/backgrounds/scenic"/>
@@ -29,6 +44,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Previous"
+            android:textStyle="bold"
             app:backgroundTint="@null"
             android:background="@drawable/shape_button01"
             android:onClick="previousImage"
@@ -39,6 +55,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Next"
+            android:textStyle="bold"
             app:backgroundTint="@null"
             android:background="@drawable/shape_button01"
             android:onClick="nextImage"/>
