@@ -2,32 +2,37 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:background="@drawable/back5"
     android:orientation="vertical"
-    android:gravity="center"
+    android:gravity="top"
     tools:context=".MainActivity">
+    
+    <RelativeLayout
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/shape_toolbar01">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="Read The Holy Ayah And Dowah"
-        android:textAllCaps="true"
-        android:textStyle="bold"
-        android:padding="5dp"
-        android:paddingTop="0px"
-        android:gravity="top"
-        android:textSize="20sp"
-        android:textColor="@color/white"
-        app:backgroundTint="@null"
-        android:background="@drawable/shape_button01"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Read The Holy Ayah And Dowah"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
 
     <ImageView
         android:id="@+id/image_view"
         android:layout_width="359dp"
         android:layout_height="370dp"
+        android:layout_below="@id/text"
         android:layout_marginTop="40dp"
         android:layout_centerHorizontal="true"
         tools:srcCompat="@tools:sample/backgrounds/scenic"/>
