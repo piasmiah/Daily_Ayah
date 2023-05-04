@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
     android:background="@drawable/back5"
-    android:orientation="vertical"
-    android:gravity="top"
     tools:context=".MainActivity">
     
     <RelativeLayout
@@ -30,7 +29,7 @@
 
     <ImageView
         android:id="@+id/image_view"
-        android:layout_width="359dp"
+        android:layout_width="390dp"
         android:layout_height="370dp"
         android:layout_below="@id/text"
         android:layout_marginTop="40dp"
@@ -65,6 +64,6 @@
             android:background="@drawable/shape_button01"
             android:onClick="nextImage"/>
 
-    </LinearLayout>
 
-</RelativeLayout>
+    </LinearLayout>
+    </RelativeLayout>
